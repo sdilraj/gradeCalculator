@@ -35,7 +35,7 @@ public class Student {
 	}
 	
 	public double highestGrade() {
-		double[] student = null;
+		double[] students = null;
 		double high = students[0];
 		for(int i = 0; i < 50; i++) {
 			if(students [i] > high)
@@ -139,7 +139,7 @@ public class Student {
 				for(int i = 0; i < x; i ++) {
 					if (y == st.getName()) {
 						System.out.println("Student's Details" + st.getId() + st.getSubjectGrades());
-						st = student[i];
+						st = students[i];
 						st = null;
 					}
 					else {
@@ -157,6 +157,9 @@ public class Student {
 			
 			
 		}
+		
+		while (choice == 7);
+		input.close();
 		
 
 	}
