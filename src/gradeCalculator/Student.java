@@ -103,7 +103,58 @@ public class Student {
 				}
 			}
 			
-			else if (choice == 3)
+			else if (choice == 3) {
+				for(int i = 0; i < x; i++) {
+					st = students[i];
+					System.out.println("Student's Name: " + st.getName());
+					System.out.println("Student's Details: " + st.getId() + st.getSubjectGrades() + st.averageGrade() + st.highestGrade());
+					
+				}
+			}
+			
+			else if (choice == 4) {
+				System.out.println("Enter student's name to update it's record");
+				String n = input.nextLine();
+				for(int i = 0; i < x; i++) {
+					if(n == st.getName()) {
+						System.out.println("Enter the studetn's details");
+						double newgrade1 = input.nextDouble();
+						subject1grade = newgrade1;
+						double newgrade2 = input.nextDouble();
+						subject2grade = newgrade2;
+						double newgrade3 = input.nextDouble();
+						subject3grade = newgrade3;
+						
+						st = students[i];
+					}
+					else {
+						System.out.println("The record does not exit");
+					}
+				}
+			}
+			
+			else if (choice == 5) {
+				System.out.println("Enter the student name which record you want to delete");
+				String y = input.nextLine();
+				for(int i = 0; i < x; i ++) {
+					if (y == st.getName()) {
+						System.out.println("Student's Details" + st.getId() + st.getSubjectGrades());
+						st = student[i];
+						st = null;
+					}
+					else {
+						System.out.println("The records does not exist");
+					}
+				}
+			}
+			
+			else if (choice == 6) {
+				System.out.println("Enter the student's name to calculate it's grade");
+				String z = input.nextLine();
+				
+				
+			}
+			
 			
 		}
 		
