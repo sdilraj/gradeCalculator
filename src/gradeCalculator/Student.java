@@ -152,7 +152,63 @@ public class Student {
 				System.out.println("Enter the student's name to calculate it's grade");
 				String z = input.nextLine();
 				
+				for(int i = 0; i <x; i++) {
+					if(z == st.getName() ) {
+						
+						System.out.println("Student's details: " + st.getSubjectGrades());
+						if(subject1grade > 90) 
+							System.out.println("The grade is A");
+						else if(subject1grade > 80 && subject1grade < 90)
+							System.out.println("The grade is B");
+						else if(subject1grade > 70 && subject1grade < 80)
+							System.out.println("The grade is C");
+						else if(subject1grade > 60 && subject1grade < 70)
+							System.out.println("The grade is D");
+						else if(subject1grade <60)
+							System.out.println("The grade is F");
+						else
+							System.out.println("Enter a valid number");
+						
+						
+						if(subject2grade > 90) 
+							System.out.println("The grade is A");
+						else if(subject2grade > 80 && subject2grade < 90)
+							System.out.println("The grade is B");
+						else if(subject2grade > 70 && subject2grade < 80)
+							System.out.println("The grade is C");
+						else if(subject2grade > 60 && subject2grade < 70)
+							System.out.println("The grade is D");
+						else if(subject2grade <60)
+							System.out.println("The grade is F");
+						else
+							System.out.println("Enter a valid number");
+						
+						
+						if(subject3grade > 90) 
+							System.out.println("The grade is A");
+						else if(subject3grade > 80 && subject3grade < 90)
+							System.out.println("The grade is B");
+						else if(subject3grade > 70 && subject3grade < 80)
+							System.out.println("The grade is C");
+						else if(subject3grade > 60 && subject3grade < 70)
+							System.out.println("The grade is D");
+						else if(subject3grade <60)
+							System.out.println("The grade is F");
+						else
+							System.out.println("Enter a valid number");
+						
+					}
+					
+					else
+						System.out.println("The record does not exist");
+					
+				}
 				
+				
+			}
+			
+			else if (choice < 1 || choice > 7) {
+				System.out.println("Invalid Choice");
 			}
 			
 			
